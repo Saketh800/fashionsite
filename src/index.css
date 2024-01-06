@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url("assets/Images/giphy.gif");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card {
+    width: 300px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(29, 26, 26);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.card:hover h2{
+    color: yellow;
+}
+
+.card:hover .card-para {
+    display:block;
+    
+}
+
+.card2 {
+    width: 1200px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(29, 26, 26);
+    padding: 20px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+  
+.card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+  
+.card-heading{
+    color: white;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.card-para{
+    color: #ccc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: none;
+    padding: 20px;
+    text-align: left;
+}
+
+.hover-text { 
+    font-size: 18px; 
+    transition: all 0.5s ease-in-out; 
+}
+  
+.hover-text:hover {
+    font-weight: bold;
+    text-shadow: 0px 0px 10px yellow,
+    0px 0px 20px yellow,
+    0px 0px 40px yellow;
+}
+
+.buy-button {
+    display: none;
+    background-color: yellow;
+    border-radius: 5px;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.cards:hover .buy-button {
+    display: block;
+}
